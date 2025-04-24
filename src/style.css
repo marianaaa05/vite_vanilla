@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+section {
+  padding: 2rem;
+  transition: all 0.6s ease-out;
+}
+
+.hero {
+  background: url('/fondo_aesthetic.jpg') no-repeat center center/cover;
+  text-align: center;
+  padding: 5rem 2rem;
+  font-size: 1.5rem;
+  position: relative;
+  color: #fff;
+}
+
+.hero-overlay {
+  background-color: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+
+.hero p {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+.hero button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 8px;
+}
+
+.hero button:hover {
+  background-color: #f0f0f0;
+}
+
+
+.content {
+  background-color: #d41414;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.collections {
+  padding: 60px 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.collections .title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.collections .subtitle {
+  font-size: 1.1rem;
+  color: #bbb;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 0.5rem 0 0.3rem;
+  color: #fff;
+}
+
+.card p {
+  color: #ff3c00;
+  font-weight: bold;
+}
+
+
+.footer {
+  background-color: #000;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0px) !important;
+}
+
+.chatbot {
+  background-color: #2f2f2f;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #000000;
+}
+
+#chat-input {
+  padding: 0.5rem;
+  width: 70%;
+}
+
+#chat-form button {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  background-color: #111;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#chat-form button:hover {
+  background-color: #333;
+}
