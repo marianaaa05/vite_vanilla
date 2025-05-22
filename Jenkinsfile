@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     tools {
-        nodejs "NodeJS_24" // Asegúrate de tener una instalación de Node en Jenkins
+        nodejs "NodeJS_24"
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/marianaaa05/vite_vanilla.git'
+                git branch: 'main', url: 'https://github.com/marianaaa05/vite_vanilla.git' //especifica la rama main
             }
         }
 
