@@ -10,7 +10,6 @@ export function createHero() {
   
     // Botón que hace scroll al contenido
     section.querySelector('#ver-coleccion').addEventListener('click', () => {
-      const unusedVariable = 'Variable no utilizada'; //variable no utilizada: mala práctica de desarrollo
       const content = document.querySelector('.content');
       if (content) {
         content.scrollIntoView({ behavior: 'smooth' });
