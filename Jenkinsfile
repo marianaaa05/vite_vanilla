@@ -26,8 +26,14 @@ pipeline {
 
         stage('Resultado') {
             steps {
-                echo '✅ Proyecto construido correctamente con Vite.'
+                echo 'Proyecto construido correctamente con Vite.'
             }
         }
+        stage('Analizar código con ESLint') {
+            steps {
+                bat 'npx eslint src/ --ext .js'
+            }
+        }
+
     }
 }
