@@ -85,6 +85,7 @@ export function createChatbot() {
   const chatForm = section.querySelector('#chat-form');
   const chatInput = section.querySelector('#chat-input');
 
+//MENSAJE INICIAL DE BIENVENIDA
   appendMessage("Bot", "¡Hola! Soy Aesthetic Bot 😎🛍️ ¿En qué puedo ayudarte hoy?");
 
   chatForm.addEventListener('submit', async (e) => {
