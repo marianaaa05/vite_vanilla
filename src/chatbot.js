@@ -64,7 +64,7 @@
 //     return section;
 //   }
 
-//cambio de api key
+
 
 export function createChatbot() {
   const section = document.createElement('section');
@@ -85,7 +85,6 @@ export function createChatbot() {
   const chatForm = section.querySelector('#chat-form');
   const chatInput = section.querySelector('#chat-input');
 
-//MENSAJE INICIAL DE BIENVENIDA
   appendMessage("Bot", "¡Hola! Soy Aesthetic Bot 😎🛍️ ¿En qué puedo ayudarte hoy?");
 
   chatForm.addEventListener('submit', async (e) => {
@@ -98,12 +97,12 @@ export function createChatbot() {
     chatInput.value = "";
 
     try {
-      const response = await fetch("https://api.openai.com/v1/chat/completions", {
+      const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           "Authorization": `Bearer ${API_KEY}`,
-          // "HTTP-Referer": REFERER,
+          "HTTP-Referer": REFERER,
         },
         body: JSON.stringify({
           model: "mistralai/devstral-small:free",
