@@ -103,7 +103,7 @@ export function createChatbot() {
         headers: {
           "Content-Type": "application/json",
           "Authorization": `Bearer ${API_KEY}`,
-          "HTTP-Referer": REFERER,
+          // "HTTP-Referer": REFERER,
         },
         body: JSON.stringify({
           model: "mistralai/devstral-small:free",
